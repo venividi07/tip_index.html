@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip-Calculator</title>
+    <link href="tip_styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <header>
+      </header>
+      <main>
+        <section class="input-section limited">
+          <label for="bill">Bill</label>
+          <div id="bill-wrapper">
+            <img src="images/icon-dollar.svg" alt="currency" />
+            <input type="number" id="bill"  class="input-amount" placeholder="Input your bill" />
+          </div>
+          <label>Select Tip %</label>
+          <button type="button"  class='percentInput' value="5"> 5%</button>
+          <button type="button"  class='percentInput' value="5"> 10%</button>
+          <button type="button"  class='percentInput' value="5"> 15%</button>
+          <button type="button"  class='percentInput' value="5"> 25%</button>
+          <button type="button"  class='percentInput' value="5"> 50%</button>
+          <input type="number" class='customInput' placeholder="Custom" />
+          <label for="people" >Number of People</label>
+          <div id="people-wrapper">
+            <img src="images/icon-person.svg" alt="currency" />
+            <input type="number" id="people" class="input-amount" placeholder="Input number of people" />
+          </div>
+        </section>
+        <section class="output-section limited">
+          <div>
+            <h4>Tip Amount</h4>
+            <h6>/ person</h6>
+          </div>
+          <div class='amount'>
+            <img src="images/icon-dollar.svg" alt="currency" />
+            <h4 class="tip">0.00</h4>
+          </div>
+          <div>
+            <h4>Total</h4>
+            <h6>/ person</h6>
+          </div>
+          <div class='amount'>
+            <img src="images/icon-dollar.svg" alt="currency" />
+            <h4 class="total">0.00</h4>
+          </div>
+          <button id="reset-btn">RESET</button>
+        </section>
+      </main>
+    </div>
+    <script src="tip_script.js" type='module' defer></script>
+  </body>
+</html>
